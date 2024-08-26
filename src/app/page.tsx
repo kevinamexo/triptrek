@@ -8,8 +8,8 @@ export default function Home() {
       <div className="mt-7 flex flex-col gap-4 pb-[100px]">
         <TripsHeader />
         <div className="overflow-y-scroll mt-[60px] ">
-          {[1, 2, 3, 4, 2, 5, 6, 7, 4].map((x) => (
-            <TripCard />
+          {[1, 2, 3, 4, 2, 5, 6, 7, 4].map((x, key) => (
+            <TripCard key={key} />
           ))}
         </div>
       </div>
